@@ -1,0 +1,15 @@
+h1. iDiff
+
+Simple image difference calculation based on GTM:http://code.google.com/p/google-toolbox-for-mac/ unit testing utilities.
+
+Usage:
+iDiff <image A> <image B>
+
+Exit status will be 0 if both images are identical.
+If images are different a new image will be saved to <image B> directory.
+
+h2. TODO
+* Make saving image difference optional.
+
+h2. Licence
+See GTM licence.
