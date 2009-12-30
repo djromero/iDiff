@@ -9,7 +9,9 @@ Exit status will be 0 if both images are identical.
 If images are different a new image will be saved to <image B> directory.
 
 h2. TODO
+
 * Make saving image difference optional.
 
 h2. Licence
+
 See GTM licence.
