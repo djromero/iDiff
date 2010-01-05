@@ -24,15 +24,13 @@
 
 #import <ApplicationServices/ApplicationServices.h>
 
-#define ALMOST_EQUAL_THRESHOLD (2)
-
 CGContextRef GTMCreateUnitTestBitmapContextOfSizeWithData(CGSize size, unsigned char **data);
 
 @interface NSObject (GTMAdditions)
 - (CFStringRef)gtm_imageUTI;
 - (NSData*)gtm_imageDataForImage:(CGImageRef)image;
 - (CGImageRef)gtm_imageWithContentsOfFile:(NSString*)path;
-- (BOOL)gtm_compareWithImageAt:(NSString*)path diffImage:(CGImageRef*)diff;
+- (int)gtm_compareWithImageAt:(NSString*)path diffImage:(CGImageRef*)diff;
 @end
 
 @interface NSImage (GTMAdditions)

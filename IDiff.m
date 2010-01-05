@@ -5,15 +5,20 @@
 
 int main (int argc, char * const argv[]) {
     NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-    int dflag = 0;
+    int dflag = 0; // save diff image 
+    int vflag = 0; // verbose output
     int c;
     
     opterr = 0;
     
-    while ((c = getopt (argc, argv, "d")) != -1) {
+    // Flags: -d -v
+    while ((c = getopt (argc, argv, "dv")) != -1) {
         switch (c) {
             case 'd':
                 dflag = 1;
+                break;
+            case 'v':
+                vflag = 1;
                 break;
             default:
                 // Ignore unknown options
@@ -29,17 +34,20 @@ int main (int argc, char * const argv[]) {
 
     NSImage *imgA = [[NSImage alloc] initWithContentsOfFile:pathOfImageA];
     CGImageRef imgDiff = nil;    
-    BOOL aIsEqToB = [imgA gtm_compareWithImageAt:pathOfImageB diffImage:&imgDiff];
-    if (!aIsEqToB) {
-        NSLog(@"Images are NOT equal.");
+    int numberOfDiffs = [imgA gtm_compareWithImageAt:pathOfImageB diffImage:&imgDiff];
+    if (numberOfDiffs > 0) {
+        NSLog(@"Images are NOT equal. Found %i diffs.", numberOfDiffs);
+        NSData *data = nil;
+        NSString *imgDiffPath = @"-";
         if (1 == dflag && imgDiff) {
-            NSData *data = nil;
-            NSString *imgDiffPath = [NSString stringWithFormat:@"%@.diff.tiff", pathOfImageA];
+            imgDiffPath = [NSString stringWithFormat:@"%@.diff.tiff", pathOfImageA];
             data = [imgA gtm_imageDataForImage:imgDiff];
             if ([data writeToFile:imgDiffPath atomically:YES]) {
                 NSLog(@"Saved diff to %@", imgDiffPath);
-                printf("%s\n", [imgDiffPath cStringUsingEncoding:NSUTF8StringEncoding]);
             }
+        }
+        if (1 == vflag) {
+            printf("%i\t%s\n", numberOfDiffs, [imgDiffPath cStringUsingEncoding:NSUTF8StringEncoding]);
         }
         return 1;
     }

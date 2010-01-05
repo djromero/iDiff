@@ -57,7 +57,7 @@ CGContextRef GTMCreateUnitTestBitmapContextOfSizeWithData(CGSize size,
 // Small utility function for checking to see if a is b +/- 1.
 GTM_INLINE BOOL almostEqual(unsigned char a, unsigned char b) {
   unsigned char diff = a > b ? a - b : b - a;
-  BOOL notEqual = diff < ALMOST_EQUAL_THRESHOLD;
+  BOOL notEqual = diff < 2;
   return notEqual;
 }
 
@@ -109,8 +109,9 @@ GTM_INLINE BOOL almostEqual(unsigned char a, unsigned char b) {
   return (CGImageRef)GTMCFAutorelease(imageRef);
 }
 
-- (BOOL)gtm_compareWithImageAt:(NSString*)path diffImage:(CGImageRef*)diff {
+- (int)gtm_compareWithImageAt:(NSString*)path diffImage:(CGImageRef*)diff {
   BOOL answer = NO;
+  int numberOfDiffs = 0;
   if (diff) {
     *diff = nil;
   }
@@ -199,6 +200,7 @@ GTM_INLINE BOOL almostEqual(unsigned char a, unsigned char b) {
               (((uint32_t)imageBlue) << 8) + 
               (((uint32_t)imageAlpha) / 2);
             } else {
+              numberOfDiffs++;
               newColor = 0xFF0000FF;
             }
             diffRow[col] = newColor;
@@ -214,7 +216,7 @@ GTM_INLINE BOOL almostEqual(unsigned char a, unsigned char b) {
     free(imageData);
     CFRelease(imageContext);
   }
-  return answer;
+  return answer ? 0 : numberOfDiffs;
 }
 @end
 

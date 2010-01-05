@@ -8,7 +8,7 @@
 			8DD76F960486AA7600D96B5E /* IDiff */,
 		);
 		breakpoints = (
-			B93BA26510F2805E000BEA30 /* IDiff.m:32 */,
+			B941160310F3712E002ED9E3 /* GTMImageComparison.m:219 */,
 		);
 		codeSenseManager = B97698D410EBBF7F00DF0F88 /* Code sense */;
 		executables = (
@@ -103,13 +103,12 @@
 			PBXWorkspaceStateSaveDate = 284386048;
 		};
 		perUserProjectItems = {
-			B93BA27510F34B21000BEA30 = B93BA27510F34B21000BEA30 /* PBXTextBookmark */;
-			B93BA28B10F35AE8000BEA30 = B93BA28B10F35AE8000BEA30 /* PBXTextBookmark */;
-			B93BA28C10F35AE8000BEA30 = B93BA28C10F35AE8000BEA30 /* PBXTextBookmark */;
-			B93BA28D10F35AE8000BEA30 = B93BA28D10F35AE8000BEA30 /* PBXTextBookmark */;
-			B93BA28E10F35AE8000BEA30 = B93BA28E10F35AE8000BEA30 /* PBXTextBookmark */;
-			B93BA28F10F35AE8000BEA30 = B93BA28F10F35AE8000BEA30 /* PBXTextBookmark */;
-			B94115EC10F3631E002ED9E3 /* PBXTextBookmark */ = B94115EC10F3631E002ED9E3 /* PBXTextBookmark */;
+			B93BA28C10F35AE8000BEA30 /* PBXTextBookmark */ = B93BA28C10F35AE8000BEA30 /* PBXTextBookmark */;
+			B94115F310F3656F002ED9E3 /* PBXTextBookmark */ = B94115F310F3656F002ED9E3 /* PBXTextBookmark */;
+			B94115F410F3656F002ED9E3 /* PBXTextBookmark */ = B94115F410F3656F002ED9E3 /* PBXTextBookmark */;
+			B941161210F3715E002ED9E3 /* PBXTextBookmark */ = B941161210F3715E002ED9E3 /* PBXTextBookmark */;
+			B941161310F3715E002ED9E3 /* PBXTextBookmark */ = B941161310F3715E002ED9E3 /* PBXTextBookmark */;
+			B941161810F39CDF002ED9E3 /* PBXTextBookmark */ = B941161810F39CDF002ED9E3 /* PBXTextBookmark */;
 		};
 		sourceControlManager = B97698D310EBBF7F00DF0F88 /* Source Control */;
 		userBuildSettings = {
@@ -117,9 +116,9 @@
 	};
 	08FB7796FE84155DC02AAC07 /* IDiff.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {866, 650}}";
-			sepNavSelRange = "{601, 60}";
-			sepNavVisRange = "{20, 1688}";
+			sepNavIntBoundsRect = "{{0, 0}, {866, 754}}";
+			sepNavSelRange = "{1198, 22}";
+			sepNavVisRange = "{310, 1667}";
 		};
 	};
 	8DD76F960486AA7600D96B5E /* IDiff */ = {
@@ -128,50 +127,12 @@
 			B97698C310EBBF0700DF0F88 /* IDiff */,
 		);
 	};
-	B93BA26510F2805E000BEA30 /* IDiff.m:32 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = 08FB7796FE84155DC02AAC07 /* IDiff.m */;
-		functionName = "main()";
-		hitCount = 1;
-		ignoreCount = 0;
-		lineNumber = 32;
-		location = iDiffDebug;
-		modificationTime = 284328087.1034681;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	B93BA27510F34B21000BEA30 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9DF8EFB10EBBDD100F8E935 /* GTMImageComparison.m */;
-		name = "GTMImageComparison.m: 60";
-		rLen = 22;
-		rLoc = 2334;
-		rType = 0;
-		vrLen = 1670;
-		vrLoc = 1798;
-	};
 	B93BA28310F35654000BEA30 /* iDiff.py */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {866, 617}}";
 			sepNavSelRange = "{178, 1202}";
 			sepNavVisRange = "{0, 1380}";
 		};
-	};
-	B93BA28B10F35AE8000BEA30 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9DF8EFA10EBBDD100F8E935 /* GTMImageComparison.h */;
-		name = "GTMImageComparison.h: 23";
-		rLen = 0;
-		rLoc = 800;
-		rType = 0;
-		vrLen = 1314;
-		vrLoc = 0;
 	};
 	B93BA28C10F35AE8000BEA30 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -183,37 +144,7 @@
 		vrLen = 1380;
 		vrLoc = 0;
 	};
-	B93BA28D10F35AE8000BEA30 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 08FB7796FE84155DC02AAC07 /* IDiff.m */;
-		name = "IDiff.m: 24";
-		rLen = 60;
-		rLoc = 601;
-		rType = 0;
-		vrLen = 1688;
-		vrLoc = 20;
-	};
-	B93BA28E10F35AE8000BEA30 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9E692DA10EBB99100F73DB4 /* README.textile */;
-		name = "README.textile: 7";
-		rLen = 0;
-		rLoc = 230;
-		rType = 0;
-		vrLen = 382;
-		vrLoc = 0;
-	};
-	B93BA28F10F35AE8000BEA30 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = B9E692DA10EBB99100F73DB4 /* README.textile */;
-		name = "README.textile: 3";
-		rLen = 0;
-		rLoc = 61;
-		rType = 0;
-		vrLen = 454;
-		vrLoc = 0;
-	};
-	B94115EC10F3631E002ED9E3 /* PBXTextBookmark */ = {
+	B94115F310F3656F002ED9E3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = B9E692DA10EBB99100F73DB4 /* README.textile */;
 		name = "README.textile: 5";
@@ -223,17 +154,77 @@
 		vrLen = 454;
 		vrLoc = 0;
 	};
+	B94115F410F3656F002ED9E3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9DF8EFA10EBBDD100F8E935 /* GTMImageComparison.h */;
+		name = "GTMImageComparison.h: 26";
+		rLen = 0;
+		rLoc = 854;
+		rType = 0;
+		vrLen = 1278;
+		vrLoc = 0;
+	};
+	B941160310F3712E002ED9E3 /* GTMImageComparison.m:219 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = B9DF8EFB10EBBDD100F8E935 /* GTMImageComparison.m */;
+		functionName = "-gtm_compareWithImageAt:diffImage:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 219;
+		location = iDiffDebug;
+		modificationTime = 284389690.644682;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	B941161210F3715E002ED9E3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* IDiff.m */;
+		name = "IDiff.m: 37";
+		rLen = 22;
+		rLoc = 1198;
+		rType = 0;
+		vrLen = 1667;
+		vrLoc = 310;
+	};
+	B941161310F3715E002ED9E3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9DF8EFB10EBBDD100F8E935 /* GTMImageComparison.m */;
+		name = "GTMImageComparison.m: 112";
+		rLen = 0;
+		rLoc = 3986;
+		rType = 0;
+		vrLen = 1701;
+		vrLoc = 3290;
+	};
+	B941161810F39CDF002ED9E3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = B9DF8EFA10EBBDD100F8E935 /* GTMImageComparison.h */;
+		name = "GTMImageComparison.h: 34";
+		rLen = 0;
+		rLoc = 1204;
+		rType = 0;
+		vrLen = 1277;
+		vrLoc = 0;
+	};
 	B97698C310EBBF0700DF0F88 /* IDiff */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 			YES,
 			YES,
 			YES,
+			YES,
 		);
 		argumentStrings = (
+			"-v",
 			"-d",
-			"\"/tmp/__Captures__/[10-01-04 203333] Buy Layers.tiff\"",
-			"\"/Users/julian/wuonm/SVN/BrideOfGrab/trunk/Test/Automation/Images/Evaluation-Prefs-Buy.tiff\"",
+			"\"/tmp/__Captures__/1.tiff\"",
+			"\"/tmp/__Captures__/2.tiff\"",
 		);
 		autoAttachOnCrash = 1;
 		breakpointsEnabled = 1;
@@ -279,15 +270,15 @@
 	B9DF8EFA10EBBDD100F8E935 /* GTMImageComparison.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {866, 634}}";
-			sepNavSelRange = "{854, 0}";
-			sepNavVisRange = "{0, 1278}";
+			sepNavSelRange = "{1204, 0}";
+			sepNavVisRange = "{0, 1277}";
 		};
 	};
 	B9DF8EFB10EBBDD100F8E935 /* GTMImageComparison.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {866, 3289}}";
-			sepNavSelRange = "{2335, 0}";
-			sepNavVisRange = "{1722, 1727}";
+			sepNavIntBoundsRect = "{{0, 0}, {866, 3172}}";
+			sepNavSelRange = "{3986, 0}";
+			sepNavVisRange = "{3290, 1701}";
 		};
 	};
 	B9E692DA10EBB99100F73DB4 /* README.textile */ = {
