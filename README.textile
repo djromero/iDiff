@@ -1,6 +1,6 @@
 h1. iDiff
 
-Simple image difference calculation based on GTM:http://code.google.com/p/google-toolbox-for-mac/ unit testing utilities.
+Simple image difference calculation based on "GTM":http://code.google.com/p/google-toolbox-for-mac/ unit testing utilities.
 
 Usage:
 iDiff [-d] image_A image_B

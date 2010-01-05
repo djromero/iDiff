@@ -1,8 +1,5 @@
 #!/usr/bin/python
-# Simple image difference using PIL http://effbot.org/zone/pil-index.htm
-# Useful to validate whether iDiff works properly
-# 5th Jan 2010 by julian@wuonm.com
-#
+
 import ImageChops, Image
 import sys
 import getopt
@@ -36,7 +33,7 @@ else:
             for y in range(0, imageDiff.size[1]):
                 pixel = imageDiff.getpixel((x, y))
                 if pixel != (0, 0, 0, 0):
-                    imageDiff.putpixel((x, y), (255, 0, 0, 0))
+                    imageDiff.putpixel((x, y), (255, 0, 0, 255))
         imageDiffPath = "%s.diff.tiff" % imageAPath
         sys.stderr.write("Bounding box: %s\n" % str(imageDiff.getbbox()))
         sys.stderr.write("%s\n" % imageDiffPath)
