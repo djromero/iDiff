@@ -3,10 +3,11 @@ h1. iDiff
 Simple image difference calculation based on GTM:http://code.google.com/p/google-toolbox-for-mac/ unit testing utilities.
 
 Usage:
-iDiff <image A> <image B>
-
+iDiff [-d] <image A> <image B>
+ -d will write the diff image to disk in <image A> directory
+ 
 Exit status will be 0 if both images are identical.
-If images are different a new image will be saved to <image B> directory.
+When `-d` flag is used the image with the difference will be saved to <image A> directory.
 
 h2. TODO
 

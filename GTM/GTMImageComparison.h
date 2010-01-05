@@ -24,6 +24,8 @@
 
 #import <ApplicationServices/ApplicationServices.h>
 
+#define ALMOST_EQUAL_THRESHOLD (2)
+
 CGContextRef GTMCreateUnitTestBitmapContextOfSizeWithData(CGSize size, unsigned char **data);
 
 @interface NSObject (GTMAdditions)

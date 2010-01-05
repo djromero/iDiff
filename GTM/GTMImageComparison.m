@@ -57,7 +57,7 @@ CGContextRef GTMCreateUnitTestBitmapContextOfSizeWithData(CGSize size,
 // Small utility function for checking to see if a is b +/- 1.
 GTM_INLINE BOOL almostEqual(unsigned char a, unsigned char b) {
   unsigned char diff = a > b ? a - b : b - a;
-  BOOL notEqual = diff < 2;
+  BOOL notEqual = diff < ALMOST_EQUAL_THRESHOLD;
   return notEqual;
 }
 
